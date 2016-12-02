@@ -3,7 +3,7 @@ package com.ptrml;
 import com.ptrml.Operator.*;
 
 /**
- * Created by Pepo123 on 12/1/2016.
+ * Created by ptrml on 12/1/2016.
  */
 public class Calculator {
     private Operator operator;

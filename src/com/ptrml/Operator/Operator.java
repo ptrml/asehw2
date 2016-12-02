@@ -1,8 +1,8 @@
 package com.ptrml.Operator;
 
 /**
- * Created by Pepo123 on 12/1/2016.
+ * Abstraktna klasa za izvrsuvanje na operacii
  */
-public interface Operator {
-    float execute(float var1,float var2);
+public abstract class Operator {
+    public abstract float execute(float var1,float var2);
 }

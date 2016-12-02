@@ -1,8 +1,17 @@
 package com.ptrml.Observe;
 
 /**
- * Created by Pepo123 on 12/1/2016.
+ * interfejs so metodi za observerot
  */
 public interface Observing {
-    void notify(float _val);
+
+    /**
+     * metodot koj go povikuva subjektot za da go izvesti za napravenata promena
+     */
+    void notifyObserving();
+
+    /**
+     * se otkazuva od nadgleduvanjeto na subjektot
+     */
+    void unregister();
 }

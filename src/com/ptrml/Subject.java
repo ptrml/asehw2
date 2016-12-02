@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Pepo123 on 11/30/2016.
+ * Created by ptrml on 11/30/2016.
  */
 public class Subject implements Observed {
     private float val;
@@ -28,6 +28,10 @@ public class Subject implements Observed {
     }
 
 
+    /**
+     * dodava observer
+     * @param _obsrv Observerot koj se dodava
+     */
     @Override
     public void registerObserver(Observing _obsrv) {
 
@@ -35,18 +39,24 @@ public class Subject implements Observed {
         notifyObservers();
     }
 
+    /**
+     * @param _obsrv Observerot koj go isfrla od listata nadgleduvaci
+     */
     @Override
     public void unregisterObserver(Observing _obsrv) {
         observers.remove(_obsrv);
         notifyObservers();
     }
 
+    /**
+     * Gi izvestuva observerite deka e napravena promena
+     */
     @Override
     public void notifyObservers()
     {
         for(Observing ob : observers)
         {
-            ob.notify(this.val);
+            ob.notifyObserving();
         }
     }
 

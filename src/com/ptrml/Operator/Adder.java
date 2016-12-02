@@ -1,9 +1,9 @@
 package com.ptrml.Operator;
 
 /**
- * Created by Pepo123 on 12/1/2016.
+ * Created by ptrml on 12/1/2016.
  */
-public class Adder implements Operator{
+public class Adder extends Operator{
     @Override
     public float execute(float var1, float var2) {
         return var1+var2;
