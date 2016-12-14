@@ -1,10 +1,9 @@
 package com.ptrml;
 
-import com.ptrml.Observe.Observed;
 import com.ptrml.Observe.Observing;
 
 /**
- * Created by ptrml on 12/1/2016.
+ * Go nadgleduva subject, ako subject napravi promena, go koristi Calculator za da ja izvrsi operacijata i ja prikazuva novata vrednost
  */
 public class Observer implements Observing {
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ptrml on 11/30/2016.
+ * Nadgleduvaniot element. Pri promena na cuvanata vrednost gi izvestuva nadgleduvacite za promenata.
  */
 public class Subject implements Observed {
     private float val;
@@ -22,6 +22,10 @@ public class Subject implements Observed {
         return val;
     }
 
+    /**
+     * Setter
+     * @param val float
+     */
     public void setVal(float val) {
         this.val = val;
         notifyObservers();

@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Zemeno od primerot vo domasnata
+ */
 public class Main {
 
     /**
@@ -85,6 +89,7 @@ public class Main {
                     state = false;
                     break;
                 default:
+                    System.err.println("Unknown command");
                     break;
 
             }
